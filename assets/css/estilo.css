@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bioma{
+    height: 50vh;
+    width: auto;
+}
+
+.jugador{
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+}
+
+.puerco{
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+}
+
+.ajolote{
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+}
+
+
+.bioma-tl {
+  background-image: url(../img/bioma-tl.png);
+  background-size: cover;
+  
+}
+
+
+
+.bioma-tr {
+  background-image: url(../img/bioma-tr.jpg);
+    background-size: cover;
+
+}
+
+.bioma-bl {
+    background-image: url(../img/bioma-bl.jpg);
+    background-size: cover;
+    border-top: 10px solid black;
+    border-right: 5px solid black;
+}
+
+.bioma-br {
+    background-image: url(../img/bioma-br.webp);
+    background-size: cover;
+    border-top: 10px solid black;
+    border-left: 5px solid black ;
+}
