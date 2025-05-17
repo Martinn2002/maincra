@@ -9,22 +9,44 @@ body{
     width: auto;
 }
 
-.jugador-clase{
-    height: 150px;
-    width: auto;
-    object-fit: cover;
+.btn{
+    margin: 10px;
 }
 
-.puerco{
+.btn {
+    background-image: url(../img/textura-pasto.jpg);
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.jugador-clase{
+    top: 25vh;
     height: 150px;
     width: auto;
     object-fit: cover;
+    position: absolute;
+}
+
+.cama{
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 87vh;
+    left: 67vw;
 }
 
 .ajolote{
-    height: 150px;
+    height: 70px;
     width: auto;
     object-fit: cover;
+    position: absolute;
+    top: 76vh;
+    left: 28vw;
 }
 
 
