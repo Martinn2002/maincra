@@ -133,8 +133,8 @@ $('#dormir-en-la-cama').click(function(){
     })
     setTimeout(function(){
         explosion.play();
-        $('#jugador').toggle('explode');
-        $('#cama').toggle('explode');
+        $("#jugador").hide("explode", { pieces: 16 });
+        $("#cama").hide("explode", { pieces: 16 });
     }, 2500)
 
     setTimeout(function(){
