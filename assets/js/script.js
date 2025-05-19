@@ -91,7 +91,7 @@ $('#entrar-al-portal').click(function(){
         localizarJugador();
     }, 3000);
  
-    $('#jugador').fadeIn(3000);
+    $('#jugador').fadeIn(2000);
     
 })
 
@@ -128,11 +128,16 @@ $('#dormir-en-la-cama').click(function(){
     })
     var explosion = new Audio('assets/media/minecraft-tnt-explosion.mp3');
     $('#jugador').animate({ left: '-=15vw', top: '+=10vh'}, 1000, function(){
-        $('#jugador').attr('src', 'assets/img/LyingSteve.webp');
+        $('#jugador').attr('src','assets/img/LyingSteve.webp');
         $('#jugador').css('height', '-=56px');
     })
     setTimeout(function(){
         explosion.play();
+        $('#jugador').toggle('explode');
+        $('#cama').toggle('explode');
+    }, 2500)
+
+    setTimeout(function(){
         document.writeln('<body style="background-image: url(assets/img/gamover.webp); background-size: cover;">');
     }, 3000)
 })
